@@ -1,0 +1,26 @@
+{
+  "name": "@cli-web-terminal/react",
+  "version": "0.0.1",
+  "private": true,
+  "description": "React コンポーネント: ブラウザに claude code 用ターミナルパネル (xterm.js + WS + IME) を埋め込む。利用者の Next.js (or 他 React フレームワーク) に組み込む。",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@xterm/xterm": "^5.5.0",
+    "@xterm/addon-fit": "^0.10.0",
+    "@xterm/addon-web-links": "^0.11.0",
+    "next": ">=15.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}
